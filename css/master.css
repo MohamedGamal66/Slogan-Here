@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --main-margin: 20px;
+    --main-color: ;
+}
+.contan {
+    position: relative;
+    width: 100%;
+    height: 100vb;
+}
+/*this is the style for two parts its same but the background different*/
+.contan .half-left {
+    width: 50%;
+    height: 100vb;
+    background-color: rgb(30, 30, 30);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.contan .half-right {
+    width: 50%;
+    height: 100vb;
+    background-color: rgb(49, 46, 46); 
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+/* this is style for logo */
+.contan .half-left .logo {
+    width: 12%;
+    height: 12%;
+    margin: var(--main-margin);
+}
+.contan .half-left .logo img {
+    width: 100%;
+    height: 100%;
+}
+/* this is style for first paragraph and the "gym" word in the span with special style  */
+.contan .half-left .para-1 p {
+    position: absolute;
+    right: 35%;
+    top: 15%;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    color: rgb(84, 79, 79);
+    /* text-shadow: 0px 2px  8px rgb(168, 167, 167); */
+    line-height: 1.7;
+}
+.contan .half-left .para-1 span {
+    margin-left: 20px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 65px;
+    font-weight:400;
+    text-transform: uppercase;
+    color:rgb(252, 140, 28);
+    /* text-shadow: 0px 1px  10px rgb(252, 140, 28); */
+}
+.contan .half-left .para-2 {
+    width: 40%;
+    height: 25%;
+    padding: 15px;
+    background-color: rgb(49, 46, 46);
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+}
+.contan .half-left .para-2 p {
+    line-height: 1.7;
+    font-size: 12px;
+    color: rgb(252, 140, 28); 
+    margin-right: -90px; 
+}
+.contan .half-left .para-2 p::first-line {
+    font-size: 15px;
+}
+.contan .half-right .nav {
+    width: 60%;
+    height: 5%;
+    background-color: transparent;
+    position: absolute;
+    right: 5%;
+    top: 6%;
+    z-index: 100;
+}
+.nav ul  {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.contan ul li a {
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(252, 140, 28);
+    /* text-shadow: 0px 1px 2px rgb(220, 216, 216); */
+    margin-top: 5px;
+}
+.contan .half-right .para-1{
+    margin-top: -10px;
+    padding: 0px;
+    position: absolute;
+    top:0;
+    right: 1%;
+}
+.contan .half-right .para-1 p {
+    text-transform: uppercase;
+    font-size: 145px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 1000;
+    text-align: center;
+    line-height: 1.2;
+    color: rgba(39, 37, 37, 0.542);
+    
+}
+.contan .half-right .para-2 {
+    width: 40%;
+    height: 25%;
+    padding: 15px;
+    background-color: rgb(30, 30, 30);
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+}
+.contan .half-right .para-2 p {
+    line-height: 1.7;
+    font-size: 12px;
+    color: rgb(252, 140, 28); 
+    margin-left: -90px; 
+}
+.contan .half-right .para-2 p::first-line {
+    font-size: 15px;
+}
+.contan .half-right::before {
+    content: '';
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 40%;
+    right: 65%;
+    outline: 20px solid rgb(252, 140, 28);
+    z-index: 100;
+}
+.contan .half-right .img{
+    width: 80%;
+    height: 80%;
+    background-image: url(../media/71DXr+VHYCL._AC_SY450_-removebg-preview.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 60%;
+    top: 10%;
+    z-index: 120;
+}
+
+
